@@ -16,7 +16,7 @@
 
 /* Begin PBXFileReference section */
 		84F11DE71A588B8A003DC874 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; usesTabs = 1; };
-		84F11DE81A588B8A003DC874 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF1C067B26E31A6900ADB96A /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		D4096F801A52FCED005C037A /* IOElectrify.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOElectrify.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4096F851A52FCED005C037A /* IOElectrify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOElectrify.h; sourceTree = "<group>"; };
 		D4096F871A52FCED005C037A /* IOElectrify.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOElectrify.cpp; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		D4096F761A52FCEC005C037A = {
 			isa = PBXGroup;
 			children = (
+				BF1C067B26E31A6900ADB96A /* readme.md */,
 				84F11DE71A588B8A003DC874 /* makefile */,
-				84F11DE81A588B8A003DC874 /* README.md */,
 				D4096F821A52FCED005C037A /* IOElectrify */,
 				D4096F811A52FCED005C037A /* Products */,
 				D42AADF41FB21AE300561B9A /* Frameworks */,
@@ -142,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D4096F761A52FCEC005C037A;
@@ -188,7 +189,7 @@
 				INFOPLIST_FILE = "IOElectrify/Supporting Files/Info.plist";
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.13;
+				/* SDKROOT = macosx10.13; */
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -200,7 +201,7 @@
 				INFOPLIST_FILE = "IOElectrify/Supporting Files/Info.plist";
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.13;
+				/* SDKROOT = macosx10.13; */
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -210,6 +211,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "IOElectrify/Supporting Files/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MODULE_NAME = org.darkvoid.driver.IOElectrify;
 				PRODUCT_NAME = IOElectrify;
 				WRAPPER_EXTENSION = kext;
@@ -221,6 +223,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "IOElectrify/Supporting Files/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MODULE_NAME = org.darkvoid.driver.IOElectrify;
 				PRODUCT_NAME = IOElectrify;
 				WRAPPER_EXTENSION = kext;
